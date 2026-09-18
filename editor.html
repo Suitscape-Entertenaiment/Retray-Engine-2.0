@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Retray Engine 1.2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  
+  <link rel="icon" type="image/png" href="./assets/logooo.png">
+  <link rel="stylesheet" href="/src/interface/interface.css">
+</head>
+<body class="bg-dark">
+  
+  <button id="btn-play" class="btn">Play</button>
+  <button id="btn-stop" class="btn">Stop</button>
+  <button id="btn-more" class="btn">More...</button>
+  
+  <div style="position: relative; width: 100%; max-width: 360px; height: 250px;">
+    <canvas id="view3d" width="360" height="250"></canvas>
+    <canvas id="view2d" width="360" height="250"></canvas>
+  </div>
+
+  <div id="downbar"></div>
+  
+  <div id="loader">
+    <img src="./assets/logooo.png" width="200px" height="200px">
+    <p id="ltxt">cargando...</p>
+  </div>
+
+  <div style="display: none;" id="more_form">
+    <p>Game Settings...</p>
+    <hr>
+    <p>Name:<input id="game_name" placeholder="MyGame"></p>
+    <button id="btn-guardar" class="btn"> Save Game </button>
+    <hr>
+    <p>Another Games...</p>
+    <ul id="game_list"></ul>
+
+    <hr>
+    <p> Export Settings... </p>
+    <hr>
+    <p>Export Type: 
+      <select id="export_type" name="export_type">
+        <option value="html"> HTML </option>
+      </select>
+    </p>
+
+    <p>Optional Text(loading screen): <input id="ot" placeholder="Made By You"></p>
+    <p>Optional Background Color(loading screen): <input id="optionalColor" type="color"></p>
+
+    <button id="btn-exportar" class="btn"> Export Game </button>
+  </div>
+  <script type="module" src="./dist/main.js"></script>
+</body>
+</html>

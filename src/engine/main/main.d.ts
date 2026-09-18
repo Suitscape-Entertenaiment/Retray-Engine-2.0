@@ -1,0 +1,13 @@
+declare let pyodide: any;
+declare let running: boolean;
+declare let mode: string;
+declare const loader: HTMLElement | null;
+declare const ltxt: HTMLElement | null;
+declare const game_name: HTMLElement | null;
+declare const ot: HTMLElement | null;
+declare const oc: HTMLElement | null;
+declare function initPython(): Promise<void>;
+declare function gameLoop(): Promise<void>;
+declare function ejecutar(): Promise<void>;
+declare function detener(): Promise<void>;
+export { loader, ltxt, game_name, ot, oc, ejecutar, detener, pyodide, running, mode, initPython, gameLoop };

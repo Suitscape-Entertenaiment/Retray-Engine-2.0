@@ -1,0 +1,1 @@
+{"version":3,"file":"multimedia.js","sourceRoot":"","sources":["../../src/engine/multimedia/multimedia.ts"],"names":[],"mappings":"AAAA,IAAI,SAAS,GAAwC,EAAE,CAAC;AAExD,OAAO,EAAE,SAAS,EAAE,CAAC","sourcesContent":["let audioList: { [key: string]: HTMLAudioElement } = {};\n\nexport { audioList };"]}

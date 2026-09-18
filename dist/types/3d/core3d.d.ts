@@ -1,0 +1,16 @@
+import * as THREE from "three";
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { Object3D } from './objects/objects3d';
+import * as CANNON from 'cannon-es';
+declare const scene: THREE.Scene<THREE.Object3DEventMap>;
+declare const camera: THREE.PerspectiveCamera;
+declare const physicsWorld: CANNON.World;
+declare const render: THREE.WebGLRenderer;
+declare const controls: OrbitControls<THREE.PerspectiveCamera>;
+declare const grid: THREE.GridHelper;
+declare const axis: THREE.AxesHelper;
+declare const ambient_light: THREE.AmbientLight;
+declare const GLTFloader: GLTFLoader;
+declare function cam3d_third_person_fn(obj: Object3D, offsett: number): void;
+export { scene, camera, render, controls, grid, axis, ambient_light, GLTFloader, physicsWorld, cam3d_third_person_fn };
